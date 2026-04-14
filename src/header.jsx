@@ -1,29 +1,27 @@
 import  React from 'react';
+import logoImg from './assets/logovonana.png'; 
 
 const Header = () => {
   return (
     <header style={styles.header}>
       <div style={styles.container}>
-        {/* Lado Esquerdo - Menu */}
+        {/* Lado Esquerdo */}
         <nav style={styles.nav}>
           <a href="#produtos" style={styles.link}>PRODUTOS</a>
           <a href="#receitas" style={styles.link}>RECEITAS</a>
-          <a href="#nossa-historia" style={styles.link}>NOSSA HISTÓRIA</a>
         </nav>
 
-        {/* Centro - Logo (Simulado com texto, mas você pode usar uma tag <img>) */}
+        {/* Centro - O LOGO COM IMAGEM */}
         <div style={styles.logoContainer}>
           <div style={styles.logo}>
-            <span style={styles.logoTextTop}>VÓ </span>
-            <span style={styles.logoTextBottom}>NANÁ</span>
+            <img src={logoImg} alt="Logo Vó Naná" style={styles.logoImage} />
           </div>
         </div>
 
-        {/* Lado Direito - Links Adicionais */}
+        {/* Lado Direito */}
         <nav style={styles.nav}>
-          <a href="#onde-encontrar" style={styles.link}>ONDE ENCONTRAR</a>
+          <a href="#historia" style={styles.link}>NOSSA HISTÓRIA</a>
           <a href="#contato" style={styles.link}>CONTATO</a>
-          <button style={styles.searchBtn}>🔍</button>
         </nav>
       </div>
     </header>
@@ -68,15 +66,22 @@ const styles = {
     textAlign: 'center',
     padding: '0 40px',
   },
+
   logo: {
-    backgroundColor: '#d32f2f', // Vermelho característico
-    color: 'white',
-    padding: '10px 15px',
-    borderRadius: '0 0 15px 15px', // Curvinha do logo deles
+    backgroundColor: '#003006',
+    padding: '5px 15px 15px 15px', // Ajustei o padding para a imagem respirar
+    borderRadius: '0 0 20px 20px', 
     display: 'flex',
-    flexDirection: 'column',
-    lineHeight: '1',
+    justifyContent: 'center',
+    alignItems: 'center',
+    boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
   },
+  logoImage: {
+    height: '60px', // Controle a altura do seu logo aqui
+    width: 'auto',  // Mantém a proporção da imagem
+    objectFit: 'contain',
+  },
+  
   logoTextTop: { fontSize: '10px', fontWeight: 'bold' },
   logoTextBottom: { fontSize: '20px', fontWeight: '900' },
   searchBtn: {
