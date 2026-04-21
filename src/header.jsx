@@ -1,94 +1,110 @@
-import  React from 'react';
+import React from 'react';
+import { FaWhatsapp, FaInstagram, FaRegEnvelope } from 'react-icons/fa'; // Importando os ícones
 import logoImg from './assets/logovonana.png'; 
+import BG from './assets/background.png';
+import './index.css';
+import './index/Appindex.css';
 
 const Header = () => {
   return (
     <header style={styles.header}>
-      <div style={styles.container}>
-        {/* Lado Esquerdo */}
-        <nav style={styles.nav}>
-          <a href="#produtos" style={styles.link}>PRODUTOS</a>
-          <a href="#receitas" style={styles.link}>RECEITAS</a>
+      {/* Faixa superior marrom com ícones */}
+      <div style={styles.topBar}>
+        <div style={styles.iconContainer}>
+          <a href="#" style={styles.iconBox}><FaWhatsapp /></a>
+          <a href="#" style={styles.iconBox}><FaInstagram /></a>
+          <a href="#" style={styles.iconBox}><FaRegEnvelope /></a>
+        </div>
+      </div>
+
+      {/* Faixa principal com Logo e Menu */}
+      <div style={styles.mainNav}>
+        <nav style={styles.navLeft}>
+          <a href="#" style={styles.link}>PRODUTOS</a>
+          <a href="#" style={styles.link}>COMO PREPARAR</a>
         </nav>
 
-        {/* Centro - O LOGO COM IMAGEM */}
-        <div style={styles.logoContainer}>
-          <div style={styles.logo}>
-            <img src={logoImg} alt="Logo Vó Naná" style={styles.logoImage} />
-          </div>
+        <div style={styles.logoBadge}>
+          <img src={logoImg} alt="Vó Naná" style={styles.logoImage} />
         </div>
 
-        {/* Lado Direito */}
-        <nav style={styles.nav}>
-          <a href="#historia" style={styles.link}>NOSSA HISTÓRIA</a>
-          <a href="#contato" style={styles.link}>CONTATO</a>
+        <nav style={styles.navRight}>
+          <a href="#" style={styles.link}>INSTITUCIONAL</a>
+          <a href="#" style={styles.link}>SEJA UM REVENDEDOR</a>
         </nav>
       </div>
+      
+      {/* Linha verde inferior */}
+      <div style={styles.bottomLine}></div>
     </header>
   );
 };
 
 const styles = {
   header: {
-    backgroundColor: '#ffffff',
-    borderBottom: '1px solid #eee',
-    position: 'sticky',
-    top: 0,
-    zIndex: 1000,
     width: '100%',
-    boxShadow: '0 2px 10px rgba(0,0,0,0.05)',
+    position: 'relative',
   },
-  container: {
+  topBar: {
+    backgroundColor: '#002414', // Marrom escuro da imagem
+    height: '45px',
     display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    maxWidth: '1200px',
-    margin: '0 auto',
-    padding: '10px 20px',
-    height: '80px',
+    alignItems: 'flex-start',
+    paddingLeft: '50px',
   },
-  nav: {
+  iconContainer: {
     display: 'flex',
-    gap: '25px',
-    alignItems: 'center',
-    flex: 1,
+    gap: '10px',
+    marginTop: '10px', // Faz os ícones "caírem" um pouco para fora se desejar
   },
-  link: {
-    textDecoration: 'none',
-    color: '#444',
-    fontSize: '13px',
-    fontWeight: '600',
-    letterSpacing: '1px',
-    transition: 'color 0.3s',
-  },
-  logoContainer: {
-    flex: 0,
-    textAlign: 'center',
-    padding: '0 40px',
-  },
-
-  logo: {
-    backgroundColor: '#003006',
-    padding: '5px 15px 15px 15px', // Ajustei o padding para a imagem respirar
-    borderRadius: '0 0 20px 20px', 
+  iconBox: {
+    backgroundColor: '#FFF5E6', // Bege clarinho do fundo do ícone
+    color: '#A5692B', // Cor do ícone (verde bem escuro)
+    width: '35px',
+    height: '35px',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+    borderRadius: '10px 10px 0 0', // Arredondado só em cima como na imagem
+    fontSize: '20px',
+    textDecoration: 'none',
   },
-  logoImage: {
-    height: '60px', // Controle a altura do seu logo aqui
-    width: 'auto',  // Mantém a proporção da imagem
-    objectFit: 'contain',
+  mainNav: {
+    backgroundColor: '#042b19', // Marrom mais claro/alaranjado
+    height: '60px',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: '0 50px',
+    position: 'relative',
   },
-  
-  logoTextTop: { fontSize: '10px', fontWeight: 'bold' },
-  logoTextBottom: { fontSize: '20px', fontWeight: '900' },
-  searchBtn: {
-    background: 'none',
-    border: 'none',
-    cursor: 'pointer',
-    fontSize: '18px',
+  navLeft: { display: 'flex', gap: '50px', flex: 1, marginLeft: '250px' },
+  navRight: { display: 'flex', gap: '50px', flex: 1, justifyContent: 'flex-end', margin: '0 200px' },
+  link: {
+    color: '#FFF5E6',
+    textDecoration: 'none',
+    fontWeight: 'bold',
+    fontSize: '12px',
+  },
+  logoBadge: {
+    backgroundColor: '#002414', // Fundo verde circular do logo
+    width: '170px',
+    height: '130px',
+    borderRadius: '20%',
+    position: 'absolute',
+    left: '50%',
+    transform: 'translateX(-50%)',
+    top: '-30px',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    zIndex: 10,
+  },
+  logoImage: { width: '80%', height: 'auto' },
+  bottomLine: {
+    backgroundColor: '#006400', // Linha verde grama
+    height: '5px',
+    width: '100%',
   }
 };
 
