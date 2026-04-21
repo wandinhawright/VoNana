@@ -1,5 +1,5 @@
 import React from 'react';
-import '../index.css';
+import '../base/index.css';
 import './Appindex.css';
 
 const Escolhas = () => {

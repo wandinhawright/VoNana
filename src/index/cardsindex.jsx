@@ -2,7 +2,7 @@ import React from 'react';
 import imgPao from '../assets/paodequeijo.jpg';
 import imgQueijo from '../assets/queijocanastra.png';
 import imgSuporte from '../assets/fotoia.png';
-import '../index.css';
+import '../base/index.css';
 import './Appindex.css';
 
 const Features = () => {

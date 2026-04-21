@@ -1,0 +1,94 @@
+/*banner titulo de como preparar*/
+.banner-preparar {
+    width: 100%;
+    height: 300px; /* Altura padrão para banners de seção */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end; /* Alinha a faixa na base da imagem */
+    position: relative;
+}
+
+.preparar-overlay {
+    width: 100%;
+    /* Tom de vinho (burgundy) com transparência */
+    background-color:rgba(11, 46, 0, 0.637); 
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preparar-title {
+    color: #fcfbda; /* Bege clarinho da identidade visual */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .banner-preparar {
+        height: 200px;
+    }
+    
+    .preparar-title {
+        font-size: 1.8rem;
+    }
+}
+
+/*Introducao*/
+
+.preparar-texto-section {
+    background-color: #edebe1; /* O bege de fundo da imagem */
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.preparar-texto-container {
+    max-width: 950px; /* Limita a largura para facilitar a leitura */
+    width: 100%;
+}
+
+.preparar-texto-title {
+    color: #4a4a4a; /* Cinza escuro elegante */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.preparar-texto-content p {
+    color: #666; /* Cinza um pouco mais claro para o corpo */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify; /* Alinhamento justificado como na imagem */
+    text-indent: 2em; /* recuo de parágrafo (aprox. dois dedos) */
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 768px) {
+    .preparar-texto-section {
+        padding: 50px 20px;
+    }
+
+    .preparar-texto-title {
+        font-size: 1.6rem;
+    }
+
+    .preparar-texto-content p {
+        font-size: 1rem;
+        text-align: center; /* No celular, centralizado fica melhor que justificado */
+    }
+}

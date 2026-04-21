@@ -1,6 +1,6 @@
 import React from 'react';
 import './Appindex.css';
-import cestaImg from '../assets/cestadepaodequeijo.png'; // Use a imagem da cesta com fundo transparente
+import cestaImg from '../assets/cestadepaodequeijo.png'; 
 
 const LigaForno = () => {
   return (
@@ -16,7 +16,6 @@ const LigaForno = () => {
         <button className="btn-conheca">CONHEÇA NOSSA HISTÓRIA</button>
       </div>
 
-      {/* Imagem da cesta posicionada no canto inferior direito */}
       <img src={cestaImg} alt="Cesta de Pão de Queijo" className="cesta-posicionada" />
     </section>
   );
