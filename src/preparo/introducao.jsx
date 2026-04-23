@@ -16,8 +16,7 @@ const Introducao = () => {
             resenhar e precisa de um lanchinho a altura? Ou, simplesmente, quer um café da tarde com um pão de queijo quentinho?
              Seja qual for a ocasião, os produtos Vó Naná são a escolha perfeita para satisfazer seu paladar e 
              tornar cada momento ainda mais especial. Aqui, vamos te mostrar como preparar nossos produtos de maneira simples e prática, 
-             garantindo que você possa desfrutar do sabor autêntico de Mineiro em cada mordida.
-             Aqui, você vai encontrar dicas especiais para várias ocasiões. 
+             garantindo que você possa desfrutar do sabor autêntico de Mineiro em cada mordida. Você vai encontrar dicas especiais para várias ocasiões. 
              Porque, para todo momento existe um espaço para um produto Vó Naná.
           </p>
         </div>
