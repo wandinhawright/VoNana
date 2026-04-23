@@ -142,7 +142,7 @@ const styles = {
     color: '#FFF5E6',
     textDecoration: 'none',
     fontWeight: 'bold',
-    fontSize: '12px',
+    fontSize: '18px',
   },
 
   logoBadge: {

@@ -26,10 +26,10 @@ const Footer = () => {
         <div className="footer-column">
           <h3>CONTATO</h3>
           <div className="footer-socials">
-            <a href="#" className="social-icon"><FaInstagram /></a>
-            <a href="#" className="social-icon"><FaWhatsapp /></a>
-            <a href="#" className="social-icon"><FaFacebook /></a>
-            <a href="#" className="social-icon"><FaEnvelope /></a>
+            <a href="https://www.instagram.com/paodequeijovonana/" className="social-icon"><FaInstagram /></a>
+            <a href="https://api.whatsapp.com/send/?phone=556196561099&text&type=phone_number&app_absent=0" className="social-icon"><FaWhatsapp /></a>
+            <a href="https://www.facebook.com/paodequeijovonana" className="social-icon"><FaFacebook /></a>
+            <a href="mailto:vonana@vonana.com.br" className="social-icon"><FaEnvelope /></a>
           </div>
           <p>vonana@vonana.com.br</p>
           <p>(61) 9656-1099</p>
