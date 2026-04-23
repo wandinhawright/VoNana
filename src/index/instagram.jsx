@@ -47,7 +47,7 @@ const InstagramFeed = () => {
             </div>
           </a>
           <div className="profile-info">
-            <span className="profile-name">vonana_oficial</span>
+            <span className="profile-name">paodequeijovonana</span>
             <p className="profile-bio">Receitas de Família e Muita Paixão! 🧀❤️ #VóNaná #PãodeQueijo</p>
           </div>
         </div>
