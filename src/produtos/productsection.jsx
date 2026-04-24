@@ -1,28 +1,38 @@
 import React, { useState } from 'react';
 import './AppProdutos.css';
+import img1 from '../assets/pq.jpg';
+import img2 from '../assets/biscoitodequeijo.jpg';
+import img3 from '../assets/chipa.jpg';
+import img4 from '../assets/embalagem.png';
+
 
 const ProductSection = () => {
   // Estado para saber qual categoria está ativa
   const [categoryActive, setCategoryActive] = useState('pao-de-queijo');
 
   const categories = [
-    { id: 'pao-de-queijo', label: 'PÃO DE QUEIJO', img: '/assets/thumb-pao.jpg' },
-    { id: 'folhados', label: 'BISCOITO DE QUEIJO', img: '/assets/thumb-folhado.jpg' },
-    { id: 'especialidades', label: 'ESPECIALIDADES...', img: '/assets/thumb-especial.jpg' },
+    { id: 'pao-de-queijo', label: 'PÃO DE QUEIJO', img: img3 },
+    { id: 'biscoito-de-queijo', label: 'BISCOITO DE QUEIJO', img: img2 },
+    { id: 'especialidades', label: 'ESPECIALIDADES...', img: img1 },
   ];
 
   const products = {
     'pao-de-queijo': [
-      { id: 1, name: 'PÃO DE QUEIJO PIPOQUINHA', weight: '400G', img: '/assets/pao-400g.png' },
-      { id: 2, name: 'PÃO DE QUEIJO TRADICIONAL', weight: '400G', img: '/assets/pao-trad-400g.png' },
-      { id: 3, name: 'PÃO DE QUEIJO TRADICIONAL', weight: '820G', img: '/assets/pao-820g.png' },
-      { id: 4, name: 'PÃO DE QUEIJO TRADICIONAL', weight: '1KG', img: '/assets/pao-1kg.png' },
+      { id: 1, name: 'PÃO DE QUEIJO TRADICIONAL', weight: '400G', img: img4 },
+      { id: 2, name: 'PÃO DE QUEIJO TRADICIONAL', weight: '800G', img: img4 },
+      { id: 3, name: 'PÃO DE QUEIJO DEFUMADO', weight: '400G', img: img4 },
+      { id: 4, name: 'PÃO DE QUEIJO DEFUMADO', weight: '800G', img: img4 },
     ],
-    'folhados': [
-      { id: 5, name: 'FOLHADO DE FRANGO', weight: '300G', img: '/assets/folhado-frango.png' },
-      // Adicione mais aqui...
+    'biscoito-de-queijo': [
+      { id: 5, name: 'BISCOITO DE QUEIJO', weight: '400G', img: img4 },
+      { id: 6, name: 'BISCOITO DE QUEIJO', weight: '800G', img: img4 },
     ],
-    // ... adicione as outras categorias
+    'especialidades': [
+      { id: 7, name: 'CHIPA', weight: '400G', img: img4 },
+      { id: 8, name: 'CHIPA', weight: '800G', img: img4 },
+      { id: 9, name: 'DADINHO DE TAPIOCA', weight: '400G', img: img4 },
+      { id: 10, name: 'DADINHO DE TAPIOCA', weight: '800G', img: img4 },
+    ],
   };
 
   return (

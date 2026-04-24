@@ -14,8 +14,8 @@ function Index() {
     <div className="Index">
       <Header />
       <Hero />
+      <LigaForno />
       <Features />
-      <LigaForno /> 
       <Escolhas /> 
       <InstagramFeed />
       <Footer /> 

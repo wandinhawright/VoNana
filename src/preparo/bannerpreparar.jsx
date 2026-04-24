@@ -1,7 +1,7 @@
 import React from 'react';
 import './AppPreparo.css';
 // Importe a imagem do forno/mão ligando o fogão
-import imgForno from '../assets/paodequeijocafe.png'; 
+import imgForno from '../assets/mesadepq.png'; 
 
 const BannerPreparar = () => {
   return (
@@ -10,7 +10,7 @@ const BannerPreparar = () => {
       style={{ backgroundImage: `url(${imgForno})` }}
     >
       <div className="preparar-overlay">
-        <h1 className="preparar-title">COMO PREPARAR</h1>
+        <h1 className="preparar-title">DICAS DE CONSUMO</h1>
       </div>
     </section>
   );

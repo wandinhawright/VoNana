@@ -4,6 +4,7 @@ import Footer from './base/footer';
 import './base/index.css';
 import BannerPreparar from './preparo/bannerpreparar.jsx';
 import Introducao from './preparo/introducao.jsx';
+import CardsExpansíveis from './preparo/cardspreparo.jsx';
 
 function Preparo() {
   return (
@@ -11,6 +12,7 @@ function Preparo() {
       <Header />
         <BannerPreparar />
             <Introducao />
+              <CardsExpansíveis />
                 <Footer /> 
    <main style={{ padding: 'px' }}>
       </main>

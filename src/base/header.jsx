@@ -51,7 +51,7 @@ const Header = () => {
         {!isMobile && (
           <nav style={styles.navLeft}>
             <Link to="/produtos" style={styles.link}>PRODUTOS</Link>
-            <Link to="/preparo" style={styles.link}>COMO PREPARAR</Link>
+            <Link to="/preparo" style={styles.link}>DICAS DE CONSUMO</Link>
           </nav>
         )}
 
@@ -63,7 +63,7 @@ const Header = () => {
 
         {!isMobile && (
           <nav style={styles.navRight}>
-            <Link to="/institucional" style={styles.link}>INSTITUCIONAL</Link>
+            <Link to="/institucional" style={styles.link}>SOBRE</Link>
             <Link to="/revendedor" style={styles.link}>SEJA UM REVENDEDOR</Link>
           </nav>
         )}
@@ -83,8 +83,8 @@ const Header = () => {
       {isMobile && menuOpen && (
         <nav style={styles.mobileNav}>
           <Link to="/produtos" style={styles.mobileLink} onClick={closeMenu}>PRODUTOS</Link>
-          <Link to="/preparo" style={styles.mobileLink} onClick={closeMenu}>COMO PREPARAR</Link>
-          <Link to="/institucional" style={styles.mobileLink} onClick={closeMenu}>INSTITUCIONAL</Link>
+          <Link to="/preparo" style={styles.mobileLink} onClick={closeMenu}>DICAS DE CONSUMO</Link>
+          <Link to="/institucional" style={styles.mobileLink} onClick={closeMenu}>SOBRE</Link>
           <Link to="/revendedor" style={styles.mobileLink} onClick={closeMenu}>SEJA UM REVENDEDOR</Link>
         </nav>
       )}
@@ -203,7 +203,7 @@ const styles = {
     borderBottom: '1px solid rgba(255,245,230,0.12)',
   },
 
-  bottomLine: { backgroundColor: 'var(--vonanamarrom)', height: '5px', width: '100%' },
+  bottomLine: { backgroundColor: 'var(--vonanaverde)', height: '5px', width: '100%' },
 };
 
 export default Header;

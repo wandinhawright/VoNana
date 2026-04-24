@@ -18,8 +18,8 @@ const Footer = () => {
         <div className="footer-column">
           <h3>NAVEGAÇÃO</h3>
           <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Seja um Revendedor</a></li>
+            <li><a href="/">Início</a></li>
+            <li><a href="/revendedor">Seja um Revendedor</a></li>
           </ul>
         </div>
 

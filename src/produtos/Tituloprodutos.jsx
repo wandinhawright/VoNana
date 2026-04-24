@@ -1,6 +1,6 @@
 import React from 'react';
 import './AppProdutos.css';
-import backgroundMesa from '../assets/iaplanodefundo.png'; 
+import backgroundMesa from '../assets/fundoia.png'; 
 
 const TituloProdutos = () => {
   return (

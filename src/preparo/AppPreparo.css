@@ -1,18 +1,17 @@
 /*banner titulo de como preparar*/
 .banner-preparar {
     width: 100%;
-    height: 300px; /* Altura padrão para banners de seção */
+    height: 300px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    align-items: flex-end; /* Alinha a faixa na base da imagem */
+    align-items: flex-end;
     position: relative;
 }
 
 .preparar-overlay {
     width: 100%;
-    /* Tom de vinho (burgundy) com transparência */
     background-color:rgba(11, 46, 0, 0.637); 
     padding: 25px 0;
     display: flex;
@@ -21,7 +20,7 @@
 }
 
 .preparar-title {
-    color: #fcfbda; /* Bege clarinho da identidade visual */
+    color: #fcfbda; 
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 2.5rem;
@@ -29,8 +28,6 @@
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-
-/* Ajustes para telas menores */
 @media (max-width: 768px) {
     .banner-preparar {
         height: 200px;
@@ -44,7 +41,7 @@
 /*Introducao*/
 
 .preparar-texto-section {
-    background-color: #edebe1; /* O bege de fundo da imagem */
+    background-color: #edebe1; 
     padding: 80px 20px;
     display: flex;
     justify-content: center;
@@ -52,12 +49,12 @@
 }
 
 .preparar-texto-container {
-    max-width: 950px; /* Limita a largura para facilitar a leitura */
+    max-width: 950px; 
     width: 100%;
 }
 
 .preparar-texto-title {
-    color: #4a4a4a; /* Cinza escuro elegante */
+    color: #4a4a4a; 
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 2.2rem;
@@ -68,16 +65,14 @@
 }
 
 .preparar-texto-content p {
-    color: #666; /* Cinza um pouco mais claro para o corpo */
+    color: #666; 
     font-family: 'Open Sans', sans-serif;
     font-size: 1.15rem;
     line-height: 1.6;
     margin-bottom: 20px;
-    text-align: justify; /* Alinhamento justificado como na imagem */
-    text-indent: 2em; /* recuo de parágrafo (aprox. dois dedos) */
+    text-align: justify; 
+    text-indent: 2em; 
 }
-
-/* Ajustes para telas pequenas */
 @media (max-width: 768px) {
     .preparar-texto-section {
         padding: 50px 20px;
@@ -89,6 +84,104 @@
 
     .preparar-texto-content p {
         font-size: 1rem;
-        text-align: center; /* No celular, centralizado fica melhor que justificado */
+        text-align: center; 
+    }
+}
+
+/*Cards de preparação*/
+.secao-cards {
+    background-color: #edebe1; /* Fundo bege da imagem */
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-cards {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    align-items: flex-start; /* Alinha no topo para a expansão não empurrar os vizinhos */
+}
+
+.card-expansivel {
+    flex: 1;
+    background-color: #d8d0c3; /* Bege mais escuro do card */
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.card-imagem-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.card-imagem-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card-expansivel:hover .card-imagem-container img {
+    transform: scale(1.05);
+}
+
+.card-corpo h3 {
+    color: #8b0000; /* Vermelho escuro/vinho */
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 10px 0;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+/* --- EFEITO DE EXPANSÃO --- */
+
+.card-conteudo-oculto {
+    max-height: 0; /* Começa com altura zero */
+    opacity: 0;    /* Invisível */
+    transition: max-height 0.5s ease, opacity 0.4s ease;
+    overflow: hidden;
+}
+
+.card-expansivel.aberto .card-conteudo-oculto {
+    max-height: 300px; /* Valor alto o suficiente para caber o texto */
+    opacity: 1;
+    margin-top: 15px;
+}
+
+.card-conteudo-oculto p {
+    color: #444;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.btn-comprar {
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container-cards {
+        flex-direction: column;
+    }
+    .card-expansivel {
+        width: 100%;
     }
 }
