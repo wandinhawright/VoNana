@@ -139,7 +139,7 @@ const styles = {
     minHeight: '70px',
   },
 
-  navLeft: { display: 'flex', gap: '50px', flex: 1, marginLeft: '250px' },
+  navLeft: { display: 'flex', gap: '50px', flex: 1, marginLeft: '200px' },
   navRight: { display: 'flex', gap: '50px', flex: 1, justifyContent: 'flex-end', margin: '0 200px' },
 
   link: {
