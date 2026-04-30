@@ -22,7 +22,7 @@
 
 .institucional-title {
     color: #fcfbda; 
-    font-family: 'Fraunces', serif;
+    font-family: var(--cooper);
     font-weight: 800;
     font-size: 2.5rem;
     margin: 0;
@@ -62,7 +62,7 @@
 }
 
 .title-top {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--cooper);
     font-weight: 900;
     font-size: 3.5rem;
     margin: 0;
@@ -74,7 +74,7 @@
     font-family: 'Dancing Script', cursive; /* Fonte manuscrita */
     font-size: 4rem;
     color: #f2c994; /* Tom amarelado/bege para contraste */
-    margin: -20px 0 0 0;
+    margin: 10px 0 0 0;
     font-weight: 700;
 }
 

@@ -180,10 +180,11 @@
   text-transform: uppercase;
   font-size: 1.5rem;
   margin: 10px 0;
+  font-family: var(--cooper);
 }
 
 .feature-item p {
-    font-family: 'Fraunces', serif;
+  font-family: 'sans', serif;
   color: var(--white);
   font-size: 1.1rem;
   line-height: 1.4;
@@ -210,7 +211,7 @@
 
 .liga-forno-title {
     color: var(--vonanaverde); 
-    font-family: 'Fraunces', serif;
+    font-family: var(--cooper);
     font-weight: 1000;
     font-size: 2.2rem;
     margin-bottom: 30px;
@@ -340,9 +341,9 @@
 }
 
 .info-overlay h3 {
-    font-family: 'Fraunces', serif;
     margin-bottom: 8px;
     font-size: 1.2rem;
+    font-family: var(--cooper);
 }
 
 .info-overlay p {
@@ -393,7 +394,8 @@
     padding: 0 16px;
     color: #fff;
     margin-bottom: 30px;
-    font-family: 'Fraunces', serif;
+    font-family: var(--cooper);
+    font-weight: 700;
 }
 
 .insta-header-text h2 {
@@ -403,7 +405,7 @@
     margin: 0;
     line-height: 1.15;
     text-wrap: balance;
-    font-family: 'Fraunces', serif;
+    font-family: var(--cooper);
 }
 
 .insta-header-text p {
@@ -539,17 +541,36 @@
     justify-content: center;
     gap: 8px;
     text-decoration: none;
-
+    font-family: var(--cooper);
+    font-weight: 200;
     width: fit-content;
     margin: 30px auto 0; /* centraliza horizontalmente */
 }
 
 @media (max-width: 768px) {
     .insta-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
     }
     .insta-container {
-        width: 600px;
-        margin-left: 15px;
+        width: 100%;
+        max-width: 640px;
+        margin: 0 auto;
+        padding: 0 12px 18px;
+        box-sizing: border-box;
+    }
+
+    .insta-section {
+        padding: 50px 12px;
+    }
+}
+
+@media (max-width: 420px) {
+    .insta-grid {
+        gap: 8px;
+    }
+
+    .insta-container {
+        padding: 0 10px 16px;
     }
 }

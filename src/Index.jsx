@@ -21,7 +21,7 @@ function Index() {
       <Footer /> 
 
 
-      <main style={{ padding: 'px' }}>
+      <main style={{ padding: '3px' }}>
       </main>
     </div>
   );

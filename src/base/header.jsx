@@ -41,7 +41,11 @@ const Header = () => {
           >
             <FaInstagram />
           </a>
-          <a href="#" style={styles.iconBox}>
+          <a
+            href="mailto:vonana@vonana.com.br?subject=Contato%20V%C3%B3%20Nan%C3%A1&body=Ol%C3%A1%2C%0D%0A"
+            style={styles.iconBox}
+            aria-label="Enviar e-mail para vonana@vonana.com.br"
+          >
             <FaRegEnvelope />
           </a>
         </div>
@@ -143,6 +147,7 @@ const styles = {
     textDecoration: 'none',
     fontWeight: 'bold',
     fontSize: '18px',
+    fontFamily: 'var(--cooper)',
   },
 
   logoBadge: {

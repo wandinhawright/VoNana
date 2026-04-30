@@ -21,7 +21,7 @@
 
 .banner-title {
     color: var(--bg); 
-    font-family: 'Fraunces', serif;
+    font-family: var(--cooper);
     font-weight: 900;
     font-size: 3rem;
     margin: 0;
@@ -58,6 +58,7 @@
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
+    
 }
 
 .category-thumb {
@@ -87,6 +88,7 @@
     font-weight: bold;
     font-size: 0.9rem;
     border-right: 1px solid rgba(255,255,255,0.1);
+    font-family: var(--cooper);
 }
 
 .category-item.active .category-label {
@@ -133,6 +135,7 @@
   color: var(--vonanaverde);
   margin-bottom: 5px;
   font-weight: 700;
+  font-family: var(--cooper);
 }
 
 .product-info p {
