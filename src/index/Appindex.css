@@ -174,7 +174,7 @@
 }
 
 .feature-item h3 {
-  font-Family: sans-serif;
+    font-family: 'Fraunces', serif;
   font-weight: 800;
   color: var(--vonanamarrom);
   text-transform: uppercase;
@@ -183,7 +183,7 @@
 }
 
 .feature-item p {
-  font-Family: sans-serif;
+    font-family: 'Fraunces', serif;
   color: var(--white);
   font-size: 1.1rem;
   line-height: 1.4;
@@ -210,7 +210,7 @@
 
 .liga-forno-title {
     color: var(--vonanaverde); 
-    font-Family: sans-serif;
+    font-family: 'Fraunces', serif;
     font-weight: 1000;
     font-size: 2.2rem;
     margin-bottom: 30px;
@@ -220,7 +220,7 @@
 .liga-forno-text {
     color: var(--vonanaverde);
     font-size: 1.2rem;
-    font-Family: sans-serif;
+    font-family: 'Fraunces', serif;
     font-weight: 800;
     line-height: 1.5;
     margin-bottom: 40px;
@@ -296,10 +296,10 @@
 }
 
 .circle-card {
-    width: 280px; 
-    height: 280px;
+    width: 290px; 
+    height: 290px;
     position: relative;
-    border-radius: 40%;
+    border-radius: 20%;
     border: 6px solid var(--vonanaverde);
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     overflow: hidden;
@@ -340,7 +340,7 @@
 }
 
 .info-overlay h3 {
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Fraunces', serif;
     margin-bottom: 8px;
     font-size: 1.2rem;
 }
@@ -393,7 +393,7 @@
     padding: 0 16px;
     color: #fff;
     margin-bottom: 30px;
-    font-Family: sans-serif;
+    font-family: 'Fraunces', serif;
 }
 
 .insta-header-text h2 {
@@ -403,12 +403,12 @@
     margin: 0;
     line-height: 1.15;
     text-wrap: balance;
-    font-Family: sans-serif;
+    font-family: 'Fraunces', serif;
 }
 
 .insta-header-text p {
     margin-top: 10px;
-    font-Family: sans-serif;
+    font-family: 'Fraunces', serif;
 }
 
 .insta-container {
@@ -472,14 +472,14 @@
     font-weight: bold;
     color: var(--vonanaverde);
     font-size: 1.2rem;
-    font-Family: sans-serif;
+    font-family: 'Fraunces', serif;
 }
 
 .profile-bio {
     font-size: 0.9rem;
     color: #555;
     margin-top: 5px;
-    font-Family: sans-serif;
+    font-family: 'Fraunces', serif;
 }
 
 

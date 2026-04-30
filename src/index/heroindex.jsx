@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import slidePrincipal from '../assets/iniciovonana.png';
-import slideFachada from '../assets/fachadavonana.png';
+import React, { useState } from 'react';
+import slideFachada from '../assets/iniciovonana.png';
+import slidePrincipal from '../assets/fachadavonana.png';
 import slideMesa from '../assets/mesadepq.png';
 import slideCesta from '../assets/cestadepaodequeijo.png';
 import '../base/index.css';
@@ -15,16 +15,6 @@ const HERO_SLIDES = [
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-
-  useEffect(() => {
-    const intervalId = window.setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % HERO_SLIDES.length);
-    }, 5000);
-
-    return () => {
-      window.clearInterval(intervalId);
-    };
-  }, []);
 
   const goToNextSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % HERO_SLIDES.length);
