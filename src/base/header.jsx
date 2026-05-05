@@ -1,12 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaWhatsapp, FaInstagram, FaRegEnvelope, FaBars, FaTimes } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 import logoImg from '../assets/logovonana.png';
 import '../index/Appindex.css';
 
 const Header = () => {
+  const { t, i18n } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  const currentLang = (i18n.resolvedLanguage || i18n.language || 'pt').toLowerCase().split('-')[0];
+
+  const handleLanguageChange = (event) => {
+    const next = event.target.value;
+    i18n.changeLanguage(next);
+    try {
+      localStorage.setItem('vonanaLng', next);
+    } catch {
+      // ignore
+    }
+  };
 
   useEffect(() => {
     const onResize = () => {
@@ -49,26 +63,39 @@ const Header = () => {
             <FaRegEnvelope />
           </a>
         </div>
+
+        <div style={styles.langContainer}>
+          <select
+            value={currentLang}
+            onChange={handleLanguageChange}
+            style={styles.langSelect}
+            aria-label={t('language.label')}
+          >
+            <option value="pt">{t('language.pt')}</option>
+            <option value="en">{t('language.en')}</option>
+            <option value="es">{t('language.es')}</option>
+          </select>
+        </div>
       </div>
 
       <div style={{ ...styles.mainNav, ...(isMobile ? styles.mainNavMobile : {}) }}>
         {!isMobile && (
           <nav style={styles.navLeft}>
-            <Link to="/produtos" style={styles.link}>PRODUTOS</Link>
-            <Link to="/preparo" style={styles.link}>DICAS DE CONSUMO</Link>
+            <Link to="/produtos" style={styles.link}>{t('nav.products')}</Link>
+            <Link to="/preparo" style={styles.link}>{t('nav.consumptionTips')}</Link>
           </nav>
         )}
 
         <div style={{ ...styles.logoBadge, ...(isMobile ? styles.logoBadgeMobile : {}) }}>
-          <Link to="/" aria-label="Voltar para a página inicial" style={styles.logoLink} onClick={closeMenu}>
+          <Link to="/" aria-label={t('header.backHome')} style={styles.logoLink} onClick={closeMenu}>
             <img src={logoImg} alt="Vó Naná" style={{ ...styles.logoImage, ...(isMobile ? styles.logoImageMobile : {}) }} />
           </Link>
         </div>
 
         {!isMobile && (
           <nav style={styles.navRight}>
-            <Link to="/institucional" style={styles.link}>SOBRE</Link>
-            <Link to="/revendedor" style={styles.link}>SEJA UM REVENDEDOR</Link>
+            <Link to="/institucional" style={styles.link}>{t('nav.about')}</Link>
+            <Link to="/revendedor" style={styles.link}>{t('nav.reseller')}</Link>
           </nav>
         )}
 
@@ -76,7 +103,7 @@ const Header = () => {
           <button
             onClick={() => setMenuOpen((v) => !v)}
             style={styles.menuBtn}
-            aria-label="Abrir menu"
+            aria-label={t('header.openMenu')}
             aria-expanded={menuOpen}
           >
             {menuOpen ? <FaTimes /> : <FaBars />}
@@ -86,10 +113,10 @@ const Header = () => {
 
       {isMobile && menuOpen && (
         <nav style={styles.mobileNav}>
-          <Link to="/produtos" style={styles.mobileLink} onClick={closeMenu}>PRODUTOS</Link>
-          <Link to="/preparo" style={styles.mobileLink} onClick={closeMenu}>DICAS DE CONSUMO</Link>
-          <Link to="/institucional" style={styles.mobileLink} onClick={closeMenu}>SOBRE</Link>
-          <Link to="/revendedor" style={styles.mobileLink} onClick={closeMenu}>SEJA UM REVENDEDOR</Link>
+          <Link to="/produtos" style={styles.mobileLink} onClick={closeMenu}>{t('nav.products')}</Link>
+          <Link to="/preparo" style={styles.mobileLink} onClick={closeMenu}>{t('nav.consumptionTips')}</Link>
+          <Link to="/institucional" style={styles.mobileLink} onClick={closeMenu}>{t('nav.about')}</Link>
+          <Link to="/revendedor" style={styles.mobileLink} onClick={closeMenu}>{t('nav.reseller')}</Link>
         </nav>
       )}
 
@@ -105,12 +132,14 @@ const styles = {
     backgroundColor: '#002414',
     height: '45px',
     display: 'flex',
-    alignItems: 'flex-start',
+    alignItems: 'center',
+    justifyContent: 'space-between',
     paddingLeft: '50px',
+    paddingRight: '50px'
   },
-  topBarMobile: { paddingLeft: '16px' },
+  topBarMobile: { paddingLeft: '16px', paddingRight: '16px' },
 
-  iconContainer: { display: 'flex', gap: '10px', marginTop: '10px' },
+  iconContainer: { display: 'flex', gap: '10px' },
   iconBox: {
     backgroundColor: '#FFF5E6',
     color: '#A5692B',
@@ -122,6 +151,18 @@ const styles = {
     borderRadius: '10px 10px 0 0',
     fontSize: '20px',
     textDecoration: 'none',
+  },
+
+  langContainer: { display: 'flex', alignItems: 'center' },
+  langSelect: {
+    backgroundColor: '#FFF5E6',
+    color: '#A5692B',
+    border: 'none',
+    height: '35px',
+    padding: '0 10px',
+    borderRadius: '10px 10px 0 0',
+    fontWeight: '700',
+    cursor: 'pointer'
   },
 
   mainNav: {

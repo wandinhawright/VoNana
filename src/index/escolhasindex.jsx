@@ -1,11 +1,13 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './Appindex.css';
 import img1 from '../assets/logocomfundo.png';
 import img2 from '../assets/revendedorimg.png';
 import img3 from '../assets/paodequeijocafe.png';
 
 const Escolhas = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
   const handleSaibaMaisClick = (rota) => {
@@ -17,22 +19,22 @@ const Escolhas = () => {
     {
       id: 1,
       img: img1,
-      titulo: "SOBRE A EMPRESA",
-      texto: "venha conhecer mais sobre a empresa.",
+      titulo: t('home.highlights.companyTitle'),
+      texto: t('home.highlights.companyText'),
       rota: '/institucional'
     },
     {
       id: 2,
       img: img2,
-      titulo: "PRODUTOS",
-      texto: "vamos ver o que a vó Naná oferece?",
+      titulo: t('home.highlights.productsTitle'),
+      texto: t('home.highlights.productsText'),
       rota: '/produtos'
     },
     {
       id: 3,
       img: img3,
-      titulo: "DICAS DE CONSUMO",
-      texto: "aprenda a preparar refeições deliciosas com nossos produtos.",
+      titulo: t('home.highlights.tipsTitle'),
+      texto: t('home.highlights.tipsText'),
       rota: '/preparo'
     }
   ];
@@ -53,7 +55,7 @@ const Escolhas = () => {
                   type="button"
                   onClick={() => handleSaibaMaisClick(card.rota)}
                 >
-                  SAIBA MAIS
+                  {t('common.learnMore')}
                 </button>
               </div>
             </div>

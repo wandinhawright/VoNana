@@ -1,0 +1,141 @@
+{
+  "language": {
+    "label": "Language",
+    "pt": "Português",
+    "en": "English",
+    "es": "Español"
+  },
+  "header": {
+    "backHome": "Back to home",
+    "openMenu": "Open menu"
+  },
+  "nav": {
+    "products": "PRODUCTS",
+    "consumptionTips": "CONSUMPTION TIPS",
+    "about": "ABOUT",
+    "reseller": "BECOME A RESELLER",
+    "home": "Home"
+  },
+  "common": {
+    "learnMore": "LEARN MORE",
+    "viewProduct": "VIEW PRODUCT",
+    "placeOrderHere": "PLACE YOUR ORDER HERE",
+    "goToWhatsapp": "Go to WhatsApp",
+    "youWillBeRedirected": "You will be redirected to WhatsApp"
+  },
+  "home": {
+    "hero": {
+      "aria": "Vó Naná image gallery",
+      "previous": "Previous image",
+      "next": "Next image",
+      "dots": "Slide selection",
+      "goToImage": "Go to image {{index}}",
+      "slides": {
+        "mainAlt": "Main image of Vó Naná",
+        "facadeAlt": "Vó Naná store front",
+        "tableAlt": "Table with Vó Naná cheese breads",
+        "basketAlt": "Basket of Vó Naná cheese breads"
+      }
+    },
+    "ligaForno": {
+      "title": "TURN ON THE OVEN, VÓ NANÁ IS HERE!",
+      "text": "Good folks from Minas don’t keep secrets, right? That’s why we decided to share a bit of our traditions with everyone — warm, premium cheese bread!",
+      "button": "DISCOVER OUR STORY",
+      "basketAlt": "Cheese bread basket"
+    },
+    "features": {
+      "items": {
+        "traditionTitle": "The traditional Minas recipe",
+        "traditionText": "Made with high-quality ingredients!",
+        "premiumCheeseTitle": "Premium Cheeses",
+        "premiumCheeseText": "Quality from Serra da Canastra!",
+        "supportTitle": "Support",
+        "supportText": "We’re ready to help you anytime."
+      }
+    },
+    "highlights": {
+      "companyTitle": "ABOUT THE COMPANY",
+      "companyText": "come learn more about the company.",
+      "productsTitle": "PRODUCTS",
+      "productsText": "shall we see what Vó Naná offers?",
+      "tipsTitle": "CONSUMPTION TIPS",
+      "tipsText": "learn to prepare delicious meals with our products."
+    },
+    "instagram": {
+      "title": "FOLLOW VÓ NANÁ ON SOCIAL MEDIA",
+      "subtitle": "INSTAGRAM",
+      "bio": "Family recipes and lots of passion! 🧀❤️ #VóNaná #CheeseBread",
+      "follow": "Follow on Instagram",
+      "openProfile": "Open Vó Naná on Instagram"
+    }
+  },
+  "pages": {
+    "products": { "title": "PRODUCTS" },
+    "consumptionTips": { "title": "CONSUMPTION TIPS" },
+    "about": { "title": "ABOUT THE COMPANY" },
+    "reseller": { "title": "BECOME A RESELLER" }
+  },
+  "preparo": {
+    "intro": {
+      "title": "WANT TO KNOW A SECRET?",
+      "text": "Our warm cheese bread with coffee is perfect! But did you know there are many other combinations that taste amazing with our products? We’ll share great tips so you can enjoy the flavor and versatility of our cheese bread to the fullest. From classic pairings to creative recipes, discover how to turn every bite into a unique experience. If you want to try something different and expand your horizons, we’ve selected some recipes and serving ideas for you. Get ready to be surprised and delighted!"
+    },
+    "cards": {
+      "c1": {
+        "title": "CHEESE BREAD + GUAVA PASTE",
+        "desc": "A classic and completely irresistible! Warm cheese bread paired with sweet guava paste is the perfect snack. Simple, quick, and full of flavor — ideal for any time of day."
+      },
+      "c2": {
+        "title": "SMOKED CHEESE BREAD + HAM AND GRILLED CHEESE",
+        "desc": "A burst of flavors! Smoked cheese bread, with its bold taste, combined with ham and grilled cheese creates a unique experience. Perfect for those who want a heartier snack, ideal for a filling breakfast or a special afternoon bite."
+      },
+      "c3": {
+        "title": "CHEESE BREAD + CREAM CHEESE",
+        "desc": "Warm cheese bread paired with smooth, creamy cheese is a perfect combination for a tasty and comforting snack. Ideal for those who love classic flavors."
+      }
+    }
+  },
+  "institucional": {
+    "historia": {
+      "titleTop": "THINK OF CHEESE BREAD?",
+      "titleBottom": "think of vó naná!",
+      "intro": "The aroma of cheese bread filled our Sunday afternoons. We would all gather around the table to welcome a fresh batch, our eyes shining as Vó Naná brought that treat straight from the wood-fired oven.",
+      "boxTitle": "Our story:",
+      "p1": "Vó Naná was born with the purpose of carrying forward the legacy of the matriarch of a Minas family and her traditional cheese bread recipe made with Canastra cheese. More than a simple snack, it’s a piece of a family’s history, a symbol of Brazilian culture, and a flavor that unites generations. With every bite, we celebrate Vó Naná’s memory and connect with what truly matters: love, family, and tradition.",
+      "p2": "Keeping our Minas traditions alive, today we produce a premium cheese bread, preserving the original recipe and using Canastra cheese and quality ingredients, without preservatives or artificial flavorings."
+    }
+  },
+  "revendedor": {
+    "whereToFind": {
+      "title": "WHERE TO FIND",
+      "text": "Find Vó Naná products in the best supermarkets and specialty stores in your region. Want to bring our tradition to your business?",
+      "mapOverlay": "View on Google Maps",
+      "modalTitle": "PLACE YOUR ORDER",
+      "whatsappText": "Hello, I would like to become a reseller of Vó Naná products."
+    }
+  },
+  "products": {
+    "categories": {
+      "cheeseBread": "CHEESE BREAD",
+      "cheeseBiscuit": "CHEESE BISCUIT",
+      "specialties": "SPECIALTIES..."
+    },
+    "names": {
+      "traditionalCheeseBread": "TRADITIONAL CHEESE BREAD",
+      "smokedCheeseBread": "SMOKED CHEESE BREAD",
+      "cheeseBiscuit": "CHEESE BISCUIT",
+      "chipa": "CHIPA",
+      "tapiocaDice": "TAPIOCA DICE"
+    },
+    "brandWeight": "VÓ NANÁ | {{weight}}"
+  },
+  "footer": {
+    "description": "The true taste of Minas on your table. Tradition, quality, and lots of care in every cheese bread.",
+    "navigation": "NAVIGATION",
+    "contact": "CONTACT",
+    "address": "ADDRESS",
+    "reseller": "Become a Reseller",
+    "rights": "All rights reserved.",
+    "location": "Sibs Q 2 Conjunto B - Núcleo Bandeirante"
+  }
+}

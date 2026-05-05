@@ -1,11 +1,17 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './AppRevendedor.css';
 
 const OndeEncontrar = () => {
+  const { t } = useTranslation();
   const [showModal, setShowModal] = useState(false);
 
   // Link do Google Maps (substitua pela sua localização real)
   const mapsUrl = "https://www.google.com/maps/search/Vó+Naná+Pão+de+Queijo";
+
+  const whatsappHref = `https://wa.me/556196561099?text=${encodeURIComponent(
+    t('revendedor.whereToFind.whatsappText')
+  )}`;
 
   return (
     <section className="onde-encontrar-section">
@@ -13,13 +19,12 @@ const OndeEncontrar = () => {
         
         {/* Lado Esquerdo: Texto e Botão */}
         <div className="onde-info">
-          <h2>ONDE ENCONTRAR</h2>
+          <h2>{t('revendedor.whereToFind.title')}</h2>
           <p>
-            Encontre os produtos Vó Naná nos melhores supermercados e empórios da sua região. 
-            Quer levar nossa tradição para o seu negócio?
+            {t('revendedor.whereToFind.text')}
           </p>
           <button className="btn-pedido" onClick={() => setShowModal(true)}>
-            FAÇA SEU PEDIDO AQUI
+            {t('common.placeOrderHere')}
           </button>
         </div>
 
@@ -27,7 +32,7 @@ const OndeEncontrar = () => {
         <div className="onde-mapa">
           <a href={mapsUrl} target="_blank" rel="noreferrer" className="map-link-wrapper">
             <div className="map-overlay">
-              <span>Ver no Google Maps</span>
+              <span>{t('revendedor.whereToFind.mapOverlay')}</span>
             </div>
             {/* Iframe interativo do Google Maps */}
             <iframe 
@@ -50,17 +55,17 @@ const OndeEncontrar = () => {
             <button className="modal-close" onClick={() => setShowModal(false)}>&times;</button>
             
             <div className="form-header">
-              <h3>FAÇA SEU PEDIDO</h3>
-              <p>Você será redirecionado para o whatsapp</p>
+              <h3>{t('revendedor.whereToFind.modalTitle')}</h3>
+              <p>{t('common.youWillBeRedirected')}</p>
             </div>
 
             <a 
-                 href="https://wa.me/556196561099?text=Olá,%20gostaria%20de%20me%20tornar%20um%20revendedor%20dos%20produtos%20Vó%20Naná." 
+                 href={whatsappHref}
                 target="_blank" 
                 rel="noreferrer"
                 className="btn-pedido-whatsapp"
             >
-            Ir para Whatsapp
+            {t('common.goToWhatsapp')}
             </a>
           </div>
         </div>

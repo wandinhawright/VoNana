@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import slideFachada from '../assets/iniciovonana.png';
 import slidePrincipal from '../assets/bannerindex1.png';
 import slidePrincipalMobile from '../assets/bannerindex1celular.png';
@@ -10,6 +11,7 @@ import '../base/index.css';
 import './Appindex.css';
 
 const Hero = () => {
+  const { t } = useTranslation();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -29,12 +31,20 @@ const Hero = () => {
 
   const heroSlides = useMemo(
     () => [
-      { src: isMobile ? slidePrincipalMobile : slidePrincipal, alt: 'Imagem principal da VoNana' },
-      { src: slideFachada, alt: 'Fachada da loja VoNana' },
-      { src: isMobile ? slideMesaMobile : slideMesa, alt: 'Mesa com paes de queijo VoNana' },
-      { src: isMobile ? slideCestaMobile : slideCesta, alt: 'Cesta de paes de queijo VoNana' },
+      {
+        id: 'main',
+        src: isMobile ? slidePrincipalMobile : slidePrincipal,
+        alt: t('home.hero.slides.mainAlt')
+      },
+      { id: 'facade', src: slideFachada, alt: t('home.hero.slides.facadeAlt') },
+      { id: 'table', src: slideMesa, alt: t('home.hero.slides.tableAlt') },
+      {
+        id: 'basket',
+        src: isMobile ? slideCestaMobile : slideCesta,
+        alt: t('home.hero.slides.basketAlt')
+      },
     ],
-    [isMobile]
+    [isMobile, t]
   );
 
   const goToNextSlide = () => {
@@ -48,14 +58,14 @@ const Hero = () => {
   };
 
   return (
-    <section className="hero-carousel" aria-label="Galeria de imagens da VoNana">
+    <section className="hero-carousel" aria-label={t('home.hero.aria')}>
       <div
         className="hero-carousel-track"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
       >
         {heroSlides.map((slide, index) => (
           <div
-            key={slide.alt}
+            key={slide.id}
             className="hero-carousel-slide"
             aria-hidden={currentSlide !== index}
             style={{ backgroundImage: `url(${slide.src})` }}
@@ -67,7 +77,7 @@ const Hero = () => {
         type="button"
         className="hero-carousel-btn hero-carousel-btn-left"
         onClick={goToPreviousSlide}
-        aria-label="Imagem anterior"
+        aria-label={t('home.hero.previous')}
       >
         ‹
       </button>
@@ -76,19 +86,19 @@ const Hero = () => {
         type="button"
         className="hero-carousel-btn hero-carousel-btn-right"
         onClick={goToNextSlide}
-        aria-label="Proxima imagem"
+        aria-label={t('home.hero.next')}
       >
         ›
       </button>
 
-      <div className="hero-carousel-dots" role="tablist" aria-label="Selecao de slide">
+      <div className="hero-carousel-dots" role="tablist" aria-label={t('home.hero.dots')}>
         {heroSlides.map((slide, index) => (
           <button
-            key={`dot-${slide.alt}`}
+            key={`dot-${slide.id}`}
             type="button"
             className={`hero-carousel-dot ${currentSlide === index ? 'is-active' : ''}`}
             onClick={() => setCurrentSlide(index)}
-            aria-label={`Ir para imagem ${index + 1}`}
+            aria-label={t('home.hero.goToImage', { index: index + 1 })}
             aria-selected={currentSlide === index}
             role="tab"
           />

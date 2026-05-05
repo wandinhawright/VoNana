@@ -1,0 +1,141 @@
+{
+  "language": {
+    "label": "Idioma",
+    "pt": "Português",
+    "en": "English",
+    "es": "Español"
+  },
+  "header": {
+    "backHome": "Voltar para a página inicial",
+    "openMenu": "Abrir menu"
+  },
+  "nav": {
+    "products": "PRODUTOS",
+    "consumptionTips": "DICAS DE CONSUMO",
+    "about": "SOBRE",
+    "reseller": "SEJA UM REVENDEDOR",
+    "home": "Início"
+  },
+  "common": {
+    "learnMore": "SAIBA MAIS",
+    "viewProduct": "VER PRODUTO",
+    "placeOrderHere": "FAÇA SEU PEDIDO AQUI",
+    "goToWhatsapp": "Ir para Whatsapp",
+    "youWillBeRedirected": "Você será redirecionado para o whatsapp"
+  },
+  "home": {
+    "hero": {
+      "aria": "Galeria de imagens da Vó Naná",
+      "previous": "Imagem anterior",
+      "next": "Próxima imagem",
+      "dots": "Seleção de slide",
+      "goToImage": "Ir para imagem {{index}}",
+      "slides": {
+        "mainAlt": "Imagem principal da Vó Naná",
+        "facadeAlt": "Fachada da loja Vó Naná",
+        "tableAlt": "Mesa com pães de queijo Vó Naná",
+        "basketAlt": "Cesta de pães de queijo Vó Naná"
+      }
+    },
+    "ligaForno": {
+      "title": "LIGA O FORNO, VÓ NANÁ CHEGOU!",
+      "text": "Bons mineiros não guardam segredos, não é? Por isso decidimos compartilhar com todos um pouco das nossas tradições, pão de queijo premium quentinho!",
+      "button": "CONHEÇA NOSSA HISTÓRIA",
+      "basketAlt": "Cesta de Pão de Queijo"
+    },
+    "features": {
+      "items": {
+        "traditionTitle": "A tradicional receita mineira",
+        "traditionText": "Com ingredientes de alta qualidade!",
+        "premiumCheeseTitle": "Queijos Premium",
+        "premiumCheeseText": "Com qualidade da Serra da Canastra!",
+        "supportTitle": "Suporte",
+        "supportText": "Estamos prontos para te atender a qualquer momento."
+      }
+    },
+    "highlights": {
+      "companyTitle": "SOBRE A EMPRESA",
+      "companyText": "venha conhecer mais sobre a empresa.",
+      "productsTitle": "PRODUTOS",
+      "productsText": "vamos ver o que a vó Naná oferece?",
+      "tipsTitle": "DICAS DE CONSUMO",
+      "tipsText": "aprenda a preparar refeições deliciosas com nossos produtos."
+    },
+    "instagram": {
+      "title": "SIGA A VÓ NANÁ NAS REDES SOCIAIS",
+      "subtitle": "INSTAGRAM",
+      "bio": "Receitas de Família e Muita Paixão! 🧀❤️ #VóNaná #PãodeQueijo",
+      "follow": "Seguir no Instagram",
+      "openProfile": "Abrir Instagram da Vó Naná"
+    }
+  },
+  "pages": {
+    "products": { "title": "PRODUTOS" },
+    "consumptionTips": { "title": "DICAS DE CONSUMO" },
+    "about": { "title": "SOBRE A EMPRESA" },
+    "reseller": { "title": "SEJA UM REVENDEDOR" }
+  },
+  "preparo": {
+    "intro": {
+      "title": "QUER SABER UM SEGREDO?",
+      "text": "Nosso pão de queijo quentinho com café fica perfeito! Mas você sabia que existem várias outras combinações que ficam maravilhosas com nossos produtos? Vamos compartilhar dicas incríveis para você aproveitar ao máximo o sabor e a versatilidade do nosso pão de queijo. Desde combinações clássicas até receitas criativas, descubra como transformar cada mordida em uma experiência única. Então se você quiser comer algo diferente e expandir os horizontes, separamos algumas receitas e sugestões de consumo para você experimentar. Prepare-se para se surpreender e se deliciar!"
+    },
+    "cards": {
+      "c1": {
+        "title": "PÃO DE QUEIJO + GOIABADA",
+        "desc": "Um clássico, completamente irresistível! O pão de queijo quentinho combinado com a doçura da goiabada é a combinação perfeita para um lanche delicioso. Simples, rápido e cheio de sabor, é a escolha ideal para qualquer hora do dia."
+      },
+      "c2": {
+        "title": "PÃO DE QUEIJO DEFUMADO + PRESUNTO E QUEIJO COALHO",
+        "desc": "Uma explosão de sabores! O pão de queijo defumado, com seu sabor marcante, combinado com o presunto e o queijo coalho, cria uma experiência gastronômica única. Perfeito para quem busca um lanche mais robusto e cheio de personalidade, essa combinação é ideal para um café da manhã reforçado ou um lanche da tarde especial."
+      },
+      "c3": {
+        "title": "PÃO DE QUEIJO + REQUEIJÃO",
+        "desc": "O pão de queijo quentinho combinado com o sabor suave e cremoso do requeijão é uma combinação perfeita para um lanche saboroso e nutritivo. Ideal para quem gosta de sabores clássicos e reconfortantes."
+      }
+    }
+  },
+  "institucional": {
+    "historia": {
+      "titleTop": "PENSOU EM PÃO DE QUEIJO?",
+      "titleBottom": "pensou em vó naná!",
+      "intro": "O aroma do pão de queijo inundava nossas tardes de domingo. Sentávamos todos em volta da mesa para receber a fornada de pão de queijo que fazia nossos olhos brilhar ao ver Vó Naná trazendo aquela iguaria direto do forno a lenha.",
+      "boxTitle": "Nossa história:",
+      "p1": "A empresa Vó Naná nasceu com o propósito de perpetuar o legado da matriarca da família mineira com a sua tradicional receita de pão de queijo com queijo da canastra. Mais do que um simples quitute, é um pedacinho da história de uma família, um símbolo da cultura brasileira e um sabor que une gerações. A cada mordida, celebramos a memória da Vó Naná e nos conectamos com a essência do que realmente importa: o amor, a família e a tradição.",
+      "p2": "Mantendo viva nossas tradições mineiras produzimos hoje um pão de queijo premium, preservando a receita original, utilizando queijo canastra e matérias primas de qualidade, sem conservantes e aromatizantes."
+    }
+  },
+  "revendedor": {
+    "whereToFind": {
+      "title": "ONDE ENCONTRAR",
+      "text": "Encontre os produtos Vó Naná nos melhores supermercados e empórios da sua região. Quer levar nossa tradição para o seu negócio?",
+      "mapOverlay": "Ver no Google Maps",
+      "modalTitle": "FAÇA SEU PEDIDO",
+      "whatsappText": "Olá, gostaria de me tornar um revendedor dos produtos Vó Naná."
+    }
+  },
+  "products": {
+    "categories": {
+      "cheeseBread": "PÃO DE QUEIJO",
+      "cheeseBiscuit": "BISCOITO DE QUEIJO",
+      "specialties": "ESPECIALIDADES..."
+    },
+    "names": {
+      "traditionalCheeseBread": "PÃO DE QUEIJO TRADICIONAL",
+      "smokedCheeseBread": "PÃO DE QUEIJO DEFUMADO",
+      "cheeseBiscuit": "BISCOITO DE QUEIJO",
+      "chipa": "CHIPA",
+      "tapiocaDice": "DADINHO DE TAPIOCA"
+    },
+    "brandWeight": "VÓ NANÁ | {{weight}}"
+  },
+  "footer": {
+    "description": "O verdadeiro sabor de Minas na sua mesa. Tradição, qualidade e muito carinho em cada pão de queijo.",
+    "navigation": "NAVEGAÇÃO",
+    "contact": "CONTATO",
+    "address": "ENDEREÇO",
+    "reseller": "Seja um Revendedor",
+    "rights": "Todos os direitos reservados.",
+    "location": "Sibs Q 2 Conjunto B - Núcleo Bandeirante"
+  }
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Appindex.css';
 import { FaInstagram } from 'react-icons/fa'; 
+import { useTranslation } from 'react-i18next';
 import logoImg from '../assets/logocomfundo.png';
 import IG1 from '../assets/IG1.png';
 import IG2 from '../assets/IG2.png';
@@ -13,6 +14,7 @@ import IG8 from '../assets/IG8.png';
 
 
 const InstagramFeed = () => {
+  const { t } = useTranslation();
   
   const posts = [
     { id: 1, url: IG1, link: 'https://www.instagram.com/p/Cwa7oU2PhUT/' },
@@ -28,8 +30,8 @@ const InstagramFeed = () => {
   return (
     <section className="insta-section">
       <div className="insta-header-text">
-        <h2>SIGA A VÓ NANÁ NAS REDES SOCIAIS</h2>
-        <p>INSTAGRAM</p>
+        <h2>{t('home.instagram.title')}</h2>
+        <p>{t('home.instagram.subtitle')}</p>
       </div>
 
       <div className="insta-container">
@@ -39,7 +41,7 @@ const InstagramFeed = () => {
             href="https://www.instagram.com/paodequeijovonana/"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Abrir Instagram da Vó Naná"
+            aria-label={t('home.instagram.openProfile')}
           >
             <img src={logoImg} alt="Logo" className="profile-avatar" />
             <div className="profile-overlay">
@@ -48,7 +50,7 @@ const InstagramFeed = () => {
           </a>
           <div className="profile-info">
             <span className="profile-name">paodequeijovonana</span>
-            <p className="profile-bio">Receitas de Família e Muita Paixão! 🧀❤️ #VóNaná #PãodeQueijo</p>
+            <p className="profile-bio">{t('home.instagram.bio')}</p>
           </div>
         </div>
 
@@ -68,9 +70,9 @@ const InstagramFeed = () => {
           href="https://www.instagram.com/paodequeijovonana/"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Abrir Instagram da Vó Naná"
+          aria-label={t('home.instagram.openProfile')}
         >
-          <FaInstagram /> Seguir no Instagram
+          <FaInstagram /> {t('home.instagram.follow')}
         </a>
       </div>
       </div>

@@ -1,0 +1,141 @@
+{
+  "language": {
+    "label": "Idioma",
+    "pt": "Português",
+    "en": "English",
+    "es": "Español"
+  },
+  "header": {
+    "backHome": "Volver al inicio",
+    "openMenu": "Abrir menú"
+  },
+  "nav": {
+    "products": "PRODUCTOS",
+    "consumptionTips": "CONSEJOS DE CONSUMO",
+    "about": "SOBRE",
+    "reseller": "SÉ UN REVENDEDOR",
+    "home": "Inicio"
+  },
+  "common": {
+    "learnMore": "SABER MÁS",
+    "viewProduct": "VER PRODUCTO",
+    "placeOrderHere": "HAZ TU PEDIDO AQUÍ",
+    "goToWhatsapp": "Ir a WhatsApp",
+    "youWillBeRedirected": "Serás redirigido a WhatsApp"
+  },
+  "home": {
+    "hero": {
+      "aria": "Galería de imágenes de Vó Naná",
+      "previous": "Imagen anterior",
+      "next": "Imagen siguiente",
+      "dots": "Selección de diapositiva",
+      "goToImage": "Ir a la imagen {{index}}",
+      "slides": {
+        "mainAlt": "Imagen principal de Vó Naná",
+        "facadeAlt": "Fachada de la tienda Vó Naná",
+        "tableAlt": "Mesa con panes de queso Vó Naná",
+        "basketAlt": "Cesta de panes de queso Vó Naná"
+      }
+    },
+    "ligaForno": {
+      "title": "¡ENCIENDE EL HORNO, LLEGÓ VÓ NANÁ!",
+      "text": "Los buenos mineros no guardan secretos, ¿verdad? Por eso decidimos compartir con todos un poco de nuestras tradiciones: ¡pan de queso premium calentito!",
+      "button": "CONOCE NUESTRA HISTORIA",
+      "basketAlt": "Cesta de pan de queso"
+    },
+    "features": {
+      "items": {
+        "traditionTitle": "La receta tradicional de Minas",
+        "traditionText": "¡Con ingredientes de alta calidad!",
+        "premiumCheeseTitle": "Quesos Premium",
+        "premiumCheeseText": "¡Calidad de Serra da Canastra!",
+        "supportTitle": "Soporte",
+        "supportText": "Estamos listos para atenderte en cualquier momento."
+      }
+    },
+    "highlights": {
+      "companyTitle": "SOBRE LA EMPRESA",
+      "companyText": "ven a conocer más sobre la empresa.",
+      "productsTitle": "PRODUCTOS",
+      "productsText": "¿vemos lo que ofrece Vó Naná?",
+      "tipsTitle": "CONSEJOS DE CONSUMO",
+      "tipsText": "aprende a preparar comidas deliciosas con nuestros productos."
+    },
+    "instagram": {
+      "title": "SIGUE A VÓ NANÁ EN LAS REDES",
+      "subtitle": "INSTAGRAM",
+      "bio": "¡Recetas de familia y mucha pasión! 🧀❤️ #VóNaná #PãodeQueijo",
+      "follow": "Seguir en Instagram",
+      "openProfile": "Abrir Instagram de Vó Naná"
+    }
+  },
+  "pages": {
+    "products": { "title": "PRODUCTOS" },
+    "consumptionTips": { "title": "CONSEJOS DE CONSUMO" },
+    "about": { "title": "SOBRE LA EMPRESA" },
+    "reseller": { "title": "SÉ UN REVENDEDOR" }
+  },
+  "preparo": {
+    "intro": {
+      "title": "¿QUIERES SABER UN SECRETO?",
+      "text": "¡Nuestro pan de queso calentito con café queda perfecto! Pero, ¿sabías que existen muchas otras combinaciones que quedan maravillosas con nuestros productos? Compartiremos consejos increíbles para que aproveches al máximo el sabor y la versatilidad de nuestro pan de queso. Desde combinaciones clásicas hasta recetas creativas, descubre cómo transformar cada bocado en una experiencia única. Si quieres comer algo diferente y ampliar horizontes, preparamos algunas recetas y sugerencias de consumo para que pruebes. ¡Prepárate para sorprenderte y disfrutar!"
+    },
+    "cards": {
+      "c1": {
+        "title": "PAN DE QUESO + GOIABADA",
+        "desc": "¡Un clásico completamente irresistible! El pan de queso calentito combinado con la dulzura de la goiabada es perfecto para un snack delicioso. Simple, rápido y lleno de sabor, ideal para cualquier momento del día."
+      },
+      "c2": {
+        "title": "PAN DE QUESO AHUMADO + JAMÓN Y QUESO A LA PLANCHA",
+        "desc": "¡Una explosión de sabores! El pan de queso ahumado, con su sabor marcado, combinado con jamón y queso a la plancha, crea una experiencia única. Ideal para quien busca un snack más contundente, perfecto para un desayuno reforzado o una merienda especial."
+      },
+      "c3": {
+        "title": "PAN DE QUESO + QUESO CREMA",
+        "desc": "El pan de queso calentito combinado con un queso crema suave y cremoso es una combinación perfecta para una merienda sabrosa y reconfortante. Ideal para quienes aman sabores clásicos."
+      }
+    }
+  },
+  "institucional": {
+    "historia": {
+      "titleTop": "¿PENSASTE EN PAN DE QUESO?",
+      "titleBottom": "¡pensaste en vó naná!",
+      "intro": "El aroma del pan de queso llenaba nuestras tardes de domingo. Nos sentábamos alrededor de la mesa para recibir una hornada recién hecha, con los ojos brillando al ver a Vó Naná traer ese manjar directo del horno de leña.",
+      "boxTitle": "Nuestra historia:",
+      "p1": "La empresa Vó Naná nació con el propósito de perpetuar el legado de la matriarca de una familia de Minas y su receta tradicional de pan de queso con queso Canastra. Más que un simple bocado, es un pedacito de la historia de una familia, un símbolo de la cultura brasileña y un sabor que une generaciones. En cada mordida, celebramos la memoria de Vó Naná y nos conectamos con lo que realmente importa: el amor, la familia y la tradición.",
+      "p2": "Manteniendo vivas nuestras tradiciones de Minas, hoy producimos un pan de queso premium, preservando la receta original y usando queso Canastra e ingredientes de calidad, sin conservantes ni aromatizantes."
+    }
+  },
+  "revendedor": {
+    "whereToFind": {
+      "title": "DÓNDE ENCONTRAR",
+      "text": "Encuentra los productos Vó Naná en los mejores supermercados y tiendas gourmet de tu región. ¿Quieres llevar nuestra tradición a tu negocio?",
+      "mapOverlay": "Ver en Google Maps",
+      "modalTitle": "HAZ TU PEDIDO",
+      "whatsappText": "Hola, me gustaría ser revendedor de los productos Vó Naná."
+    }
+  },
+  "products": {
+    "categories": {
+      "cheeseBread": "PAN DE QUESO",
+      "cheeseBiscuit": "GALLETAS DE QUESO",
+      "specialties": "ESPECIALIDADES..."
+    },
+    "names": {
+      "traditionalCheeseBread": "PAN DE QUESO TRADICIONAL",
+      "smokedCheeseBread": "PAN DE QUESO AHUMADO",
+      "cheeseBiscuit": "GALLETAS DE QUESO",
+      "chipa": "CHIPA",
+      "tapiocaDice": "DADOS DE TAPIOCA"
+    },
+    "brandWeight": "VÓ NANÁ | {{weight}}"
+  },
+  "footer": {
+    "description": "El verdadero sabor de Minas en tu mesa. Tradición, calidad y mucho cariño en cada pan de queso.",
+    "navigation": "NAVEGACIÓN",
+    "contact": "CONTACTO",
+    "address": "DIRECCIÓN",
+    "reseller": "Sé un Revendedor",
+    "rights": "Todos los derechos reservados.",
+    "location": "Sibs Q 2 Conjunto B - Núcleo Bandeirante"
+  }
+}

@@ -2,27 +2,30 @@ import React from 'react';
 import imgPao from '../assets/paodequeijo.jpg';
 import imgQueijo from '../assets/queijocanastra.png';
 import imgSuporte from '../assets/fotoia.png';
+import { useTranslation } from 'react-i18next';
 import '../base/index.css';
 import './Appindex.css';
 
 const Features = () => {
+  const { t } = useTranslation();
+
   const itens = [
     {
       id: 1,
-      titulo: "A tradicional receita mineira",
-      texto: "Com ingredientes de alta qualidade!",
+      titulo: t('home.features.items.traditionTitle'),
+      texto: t('home.features.items.traditionText'),
       img: imgPao
     },
     {
       id: 2,
-      titulo: "Queijos Premium",
-      texto: "Com qualidade da Serra da Canastra!",
+      titulo: t('home.features.items.premiumCheeseTitle'),
+      texto: t('home.features.items.premiumCheeseText'),
       img: imgQueijo
     },
     {
       id: 3,
-      titulo: "Suporte",
-      texto: "Estamos prontos para te atender a qualquer momento.",
+      titulo: t('home.features.items.supportTitle'),
+      texto: t('home.features.items.supportText'),
       img: imgSuporte
     }
   ];

@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './AppPreparo.css';
 import img1 from '../assets/pqegoiabada.jpg';
 import img2 from '../assets/pqepresunto.png';
 import img3 from '../assets/pqerequeijao.jpg';
 
 const CardsExpansíveis = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   
   const [cardAberto, setCardAberto] = useState(null);
@@ -24,21 +26,21 @@ const CardsExpansíveis = () => {
   const dadosCards = [
     {
       id: 1,
-      titulo: "PÃO DE QUEIJO + GOIABADA",
+      titulo: t('preparo.cards.c1.title'),
       img: img1,
-      descricao: "Um clássico, completamente irresistível! O pão de queijo quentinho combinado com a doçura da goiabada é a combinação perfeita para um lanche delicioso. Simples, rápido e cheio de sabor, é a escolha ideal para qualquer hora do dia."
+      descricao: t('preparo.cards.c1.desc')
     },
     {
       id: 2,
-      titulo: "PÃO DE QUEIJO DEFUMADO + PRESUNTO E QUEIJO COALHO",
+      titulo: t('preparo.cards.c2.title'),
       img: img2,
-      descricao: "Uma explosão de sabores! O pão de queijo defumado, com seu sabor marcante, combinado com o presunto e o queijo coalho, cria uma experiência gastronômica única. Perfeito para quem busca um lanche mais robusto e cheio de personalidade, essa combinação é ideal para um café da manhã reforçado ou um lanche da tarde especial."
+      descricao: t('preparo.cards.c2.desc')
     },
     {
       id: 3,
-      titulo: "PÃO DE QUEIJO + REQUEIJÃO",
+      titulo: t('preparo.cards.c3.title'),
       img: img3,
-      descricao: "O pão de queijo quentinho combinado com o sabor suave e cremoso do requeijão é uma combinação perfeita para um lanche saboroso e nutritivo. Ideal para quem gosta de sabores clássicos e reconfortantes."
+      descricao: t('preparo.cards.c3.desc')
     }
   ];
 
@@ -61,7 +63,7 @@ const CardsExpansíveis = () => {
               
               <div className="card-conteudo-oculto">
                 <p>{card.descricao}</p>
-                <button className="btn-comprar" type="button" onClick={handleVerProduto}>VER PRODUTO</button>
+                <button className="btn-comprar" type="button" onClick={handleVerProduto}>{t('common.viewProduct')}</button>
               </div>
             </div>
           </div>

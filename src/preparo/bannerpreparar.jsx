@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './AppPreparo.css';
 // Importe a imagem do forno/mão ligando o fogão
 import imgFornoDesktop from '../assets/bannerindex2.png';
 import imgFornoMobile from '../assets/bannerindex2celular.png';
 
 const BannerPreparar = () => {
+  const { t } = useTranslation();
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -29,7 +31,7 @@ const BannerPreparar = () => {
       style={{ backgroundImage: `url(${imgForno})` }}
     >
       <div className="preparar-overlay">
-        <h1 className="preparar-title">DICAS DE CONSUMO</h1>
+        <h1 className="preparar-title">{t('pages.consumptionTips.title')}</h1>
       </div>
     </section>
   );

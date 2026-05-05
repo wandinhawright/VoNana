@@ -1,31 +1,33 @@
 import React from 'react';
 import './index.css';
 import { FaInstagram, FaWhatsapp, FaFacebook, FaEnvelope } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 import logoImg from '../assets/logovonana.png';
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="footer-site">
       <div className="footer-container">
         <div className="footer-column">
           <img src={logoImg} alt="Logo Vó Naná" className="footer-logo" />
           <p className="footer-description">
-            O verdadeiro sabor de Minas na sua mesa. Tradição, qualidade e
-            muito carinho em cada pão de queijo.
+            {t('footer.description')}
           </p>
          
         </div>
 
         <div className="footer-column">
-          <h3>NAVEGAÇÃO</h3>
+          <h3>{t('footer.navigation')}</h3>
           <ul>
-            <li><a href="/">Início</a></li>
-            <li><a href="/revendedor">Seja um Revendedor</a></li>
+            <li><a href="/">{t('nav.home')}</a></li>
+            <li><a href="/revendedor">{t('footer.reseller')}</a></li>
           </ul>
         </div>
 
         <div className="footer-column">
-          <h3>CONTATO</h3>
+          <h3>{t('footer.contact')}</h3>
           <div className="footer-socials">
             <a href="https://www.instagram.com/paodequeijovonana/" className="social-icon"><FaInstagram /></a>
             <a href="https://api.whatsapp.com/send/?phone=556196561099&text&type=phone_number&app_absent=0" className="social-icon"><FaWhatsapp /></a>
@@ -33,13 +35,13 @@ const Footer = () => {
           </div>
           <p>vonana@vonana.com.br</p>
           <p>(61) 9656-1099</p>
-          <h3>ENDEREÇO</h3>
-           <p>Sibs Q 2 Conjunto B - Núcleo Bandeirante</p>
+          <h3>{t('footer.address')}</h3>
+           <p>{t('footer.location')}</p>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2026 Vó Naná - Todos os direitos reservados.</p>
+        <p>&copy; 2026 Vó Naná - {t('footer.rights')}</p>
       </div>
     </footer>
   );
