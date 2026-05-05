@@ -106,4 +106,10 @@
     .title-top { font-size: 2.2rem; }
     .title-bottom { font-size: 2.8rem; margin-top: -10px; }
     .historia-container { text-align: center; }
+
+    .historia-content p,
+    .nossa-historia-box p {
+        text-align: justify;
+        text-align-last: left;
+    }
 }

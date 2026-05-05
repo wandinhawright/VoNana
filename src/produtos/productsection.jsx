@@ -3,8 +3,16 @@ import './AppProdutos.css';
 import img1 from '../assets/pq.jpg';
 import img2 from '../assets/biscoitodequeijo.jpg';
 import img3 from '../assets/chipa.jpg';
-import img4 from '../assets/embalagem.png';
-
+import img4 from '../assets/paodequeijotradicional800g.png';
+import img5 from '../assets/paodequeijotradicional400g.png';
+import img6 from '../assets/biscoitodequeijo800g.png';
+import img7 from '../assets/biscoitodequeijo400g.png';
+import img8 from '../assets/paodequeijodefumado800g.png';
+import img9 from '../assets/paodequeijodefumado400g.png';
+import img10 from '../assets/chipa400g.png';
+import img11 from '../assets/chipa800g.png';
+import img12 from '../assets/dadinhodetapioca400g.png';
+import img13 from '../assets/dadinhodetapioca800g.png';
 
 const ProductSection = () => {
   // Estado para saber qual categoria está ativa
@@ -18,20 +26,20 @@ const ProductSection = () => {
 
   const products = {
     'pao-de-queijo': [
-      { id: 1, name: 'PÃO DE QUEIJO TRADICIONAL', weight: '400G', img: img4 },
+      { id: 1, name: 'PÃO DE QUEIJO TRADICIONAL', weight: '400G', img: img5 },
       { id: 2, name: 'PÃO DE QUEIJO TRADICIONAL', weight: '800G', img: img4 },
-      { id: 3, name: 'PÃO DE QUEIJO DEFUMADO', weight: '400G', img: img4 },
-      { id: 4, name: 'PÃO DE QUEIJO DEFUMADO', weight: '800G', img: img4 },
+      { id: 3, name: 'PÃO DE QUEIJO DEFUMADO', weight: '400G', img: img9 },
+      { id: 4, name: 'PÃO DE QUEIJO DEFUMADO', weight: '800G', img: img8 },
     ],
     'biscoito-de-queijo': [
-      { id: 5, name: 'BISCOITO DE QUEIJO', weight: '400G', img: img4 },
-      { id: 6, name: 'BISCOITO DE QUEIJO', weight: '800G', img: img4 },
+      { id: 5, name: 'BISCOITO DE QUEIJO', weight: '400G', img: img7 },
+      { id: 6, name: 'BISCOITO DE QUEIJO', weight: '800G', img: img6 },
     ],
     'especialidades': [
-      { id: 7, name: 'CHIPA', weight: '400G', img: img4 },
-      { id: 8, name: 'CHIPA', weight: '800G', img: img4 },
-      { id: 9, name: 'DADINHO DE TAPIOCA', weight: '400G', img: img4 },
-      { id: 10, name: 'DADINHO DE TAPIOCA', weight: '800G', img: img4 },
+      { id: 7, name: 'CHIPA', weight: '400G', img: img10 },
+      { id: 8, name: 'CHIPA', weight: '800G', img: img11 },
+      { id: 9, name: 'DADINHO DE TAPIOCA', weight: '400G', img: img12 },
+      { id: 10, name: 'DADINHO DE TAPIOCA', weight: '800G', img: img13 },
     ],
   };
 

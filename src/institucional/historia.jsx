@@ -12,35 +12,21 @@ const Historia = () => {
 
         <div className="historia-content">
           <p>
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-           incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-           exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-           dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
-           id est laborum.
+           O aroma do pão de queijo inundava nossas tardes de domingo. Sentávamos todos em volta da mesa para receber a fornada de pão de queijo que fazia nossos olhos brilhar ao ver Vó Naná trazendo aquela iguaria direto do forno a lenha.
           </p>
 
           <div className="nossa-historia-box">
             <h4>Nossa história:</h4>
             <p>
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-               voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint 
-               occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt 
-               mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et
-                expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio 
-                cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis 
-                voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut
-                 officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae 
-                 sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-                 voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+              A empresa Vó Naná  nasceu com o propósito de perpetuar o legado da matriarca da família
+              mineira com a sua tradicional receita de pão de queijo com queijo da canastra. Mais do que um simples
+              quitute, é um pedacinho da história de uma família, um símbolo da cultura brasileira e um sabor que 
+              une gerações. A cada mordida, celebramos a memória da Vó Naná e nos conectamos com a essência do que
+              realmente importa: o amor, a família e a tradição.
+
             </p>
             <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-               laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
-               architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas 
-               sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-               Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-               sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+              Mantendo viva nossas tradições mineiras produzimos hoje um pão de queijo premium,  preservando a receita original, utilizando queijo canastra  e matérias primas de qualidade, sem conservantes e  aromatizantes.
             </p>
           </div>
         </div>
