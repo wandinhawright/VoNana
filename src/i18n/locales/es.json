@@ -1,9 +1,9 @@
 {
   "language": {
     "label": "Idioma",
-    "pt": "Português",
-    "en": "English",
-    "es": "Español"
+    "pt": "Português 🇧🇷",
+    "en": "English 🇺🇸",
+    "es": "Español 🇪🇸"
   },
   "header": {
     "backHome": "Volver al inicio",
@@ -38,7 +38,7 @@
       }
     },
     "ligaForno": {
-      "title": "¡ENCIENDE EL HORNO, LLEGÓ VÓ NANÁ!",
+      "title": "¡SE PREPARA, LLEGÓ VÓ NANÁ!",
       "text": "Los buenos mineros no guardan secretos, ¿verdad? Por eso decidimos compartir con todos un poco de nuestras tradiciones: ¡pan de queso premium calentito!",
       "button": "CONOCE NUESTRA HISTORIA",
       "basketAlt": "Cesta de pan de queso"
